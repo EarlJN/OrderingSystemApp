@@ -73,16 +73,22 @@ public class main extends JFrame {
 
 		JLabel txtTitle = new JLabel("MC LENIN's BURGER GRILL");
 		txtTitle.setBackground(Color.YELLOW);
-		txtTitle.setBounds(170, 20, 591, 41);
-		txtTitle.setFont(new Font("Red October", Font.PLAIN, 37));
+		txtTitle.setBounds(170, 20, 570, 41);
+		txtTitle.setFont(new Font("Red October", Font.PLAIN, 36));
 		txtTitle.setForeground(Color.YELLOW);
 		pnlHeading.add(txtTitle);
 
 		JLabel imgLogo = new JLabel("New label");
-		Image logo = new ImageIcon(this.getClass().getResource("/LeninXD.png")).getImage();
-		imgLogo.setIcon(new ImageIcon(logo));
 		imgLogo.setBounds(10, 11, 140, 46);
+		Image logo = new ImageIcon(this.getClass().getResource("/logo_1.png")).getImage();
+		System.out.println(imgLogo);
+		imgLogo.setIcon(new ImageIcon(logo));
 		pnlHeading.add(imgLogo);
+
+		JLabel imgLogo_2 = new JLabel("New label");
+		imgLogo_2.setBounds(763, 11, 81, 46);
+		setImg(imgLogo_2, "./imgs/logo_2.png", 81, 46);
+		pnlHeading.add(imgLogo_2);
 
 		JPanel pnlMenu = new JPanel();
 		pnlMenu.setBackground(new Color(255, 255, 204));
@@ -102,28 +108,31 @@ public class main extends JFrame {
 		menu_1.add(inv1_1);
 		inv1_1.setLayout(null);
 
-		JButton btnOrder_1 = new JButton("ORDER");
-		btnOrder_1.addActionListener(new ActionListener() {
+		JButton btnOrder1_1 = new JButton("ORDER");
+		btnOrder1_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Classic Burger");
 			}
 		});
-		btnOrder_1.setForeground(Color.YELLOW);
-		btnOrder_1.setBackground(Color.RED);
-		btnOrder_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnOrder_1.setBounds(85, 200, 89, 23);
-		inv1_1.add(btnOrder_1);
+		btnOrder1_1.setForeground(Color.YELLOW);
+		btnOrder1_1.setBackground(Color.RED);
+		btnOrder1_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder1_1.setBounds(85, 200, 89, 23);
+		inv1_1.add(btnOrder1_1);
 
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(10, 42, 233, 147);
-		inv1_1.add(lblNewLabel);
+		JLabel imgMenu1_1 = new JLabel("burger_1");
+		imgMenu1_1.setBounds(10, 42, 233, 147);
+		setImg(imgMenu1_1, "./imgs/burger_1.png", 233, 147);
 
-		JLabel lblNewLabel_2 = new JLabel("CLASSIC BURGER");
-		lblNewLabel_2.setBackground(Color.RED);
-		lblNewLabel_2.setForeground(Color.RED);
-		lblNewLabel_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(10, 11, 233, 20);
-		inv1_1.add(lblNewLabel_2);
+		inv1_1.add(imgMenu1_1);
+
+		JLabel lblHeading1_1 = new JLabel("CLASSIC BURGER");
+		lblHeading1_1.setBackground(Color.RED);
+		lblHeading1_1.setForeground(Color.RED);
+		lblHeading1_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading1_1.setBounds(10, 11, 233, 20);
+		inv1_1.add(lblHeading1_1);
 
 		JPanel inv2_1 = new JPanel();
 		inv2_1.setBackground(new Color(255, 255, 204));
@@ -131,28 +140,31 @@ public class main extends JFrame {
 		menu_1.add(inv2_1);
 		inv2_1.setLayout(null);
 
-		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.setBounds(10, 42, 233, 147);
-		inv2_1.add(lblNewLabel_1);
+		JLabel imgMenu2_1 = new JLabel("New label");
+		setImg(imgMenu2_1, "./imgs/Burger_2.png", 233, 147);
+		imgMenu2_1.setBounds(10, 42, 233, 147);
+		inv2_1.add(imgMenu2_1);
 
-		JButton btnOrder_2 = new JButton("ORDER");
-		btnOrder_2.addActionListener(new ActionListener() {
+		JButton btnOrder2_1 = new JButton("ORDER");
+		btnOrder2_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Cheese Burger");
 			}
-		});
-		btnOrder_2.setForeground(Color.YELLOW);
-		btnOrder_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnOrder_2.setBackground(Color.RED);
-		btnOrder_2.setBounds(85, 200, 89, 23);
-		inv2_1.add(btnOrder_2);
 
-		JLabel lblNewLabel_2_1 = new JLabel("CHEESE BURGER");
-		lblNewLabel_2_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_1.setForeground(Color.RED);
-		lblNewLabel_2_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_1.setBackground(Color.RED);
-		lblNewLabel_2_1.setBounds(10, 11, 233, 20);
-		inv2_1.add(lblNewLabel_2_1);
+		});
+		btnOrder2_1.setForeground(Color.YELLOW);
+		btnOrder2_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder2_1.setBackground(Color.RED);
+		btnOrder2_1.setBounds(85, 200, 89, 23);
+		inv2_1.add(btnOrder2_1);
+
+		JLabel lblHeading_2 = new JLabel("CHEESE BURGER");
+		lblHeading_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading_2.setForeground(Color.RED);
+		lblHeading_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading_2.setBackground(Color.RED);
+		lblHeading_2.setBounds(10, 11, 233, 20);
+		inv2_1.add(lblHeading_2);
 
 		JPanel inv3_1 = new JPanel();
 		inv3_1.setBackground(new Color(255, 255, 204));
@@ -160,28 +172,30 @@ public class main extends JFrame {
 		menu_1.add(inv3_1);
 		inv3_1.setLayout(null);
 
-		JLabel lblNewLabel_3 = new JLabel("New label");
-		lblNewLabel_3.setBounds(10, 42, 233, 147);
-		inv3_1.add(lblNewLabel_3);
+		JLabel imgMenu3_1 = new JLabel("New label");
+		imgMenu3_1.setBounds(10, 42, 233, 147);
+		setImg(imgMenu3_1, "./imgs/burger_3.png", 233, 147);
+		inv3_1.add(imgMenu3_1);
 
-		JButton btnOrder_3 = new JButton("ORDER");
-		btnOrder_3.addActionListener(new ActionListener() {
+		JButton btnOrder3_1 = new JButton("ORDER");
+		btnOrder3_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Bacon Cheese Burger");
 			}
 		});
-		btnOrder_3.setForeground(Color.YELLOW);
-		btnOrder_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnOrder_3.setBackground(Color.RED);
-		btnOrder_3.setBounds(85, 200, 89, 23);
-		inv3_1.add(btnOrder_3);
+		btnOrder3_1.setForeground(Color.YELLOW);
+		btnOrder3_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder3_1.setBackground(Color.RED);
+		btnOrder3_1.setBounds(85, 200, 89, 23);
+		inv3_1.add(btnOrder3_1);
 
-		JLabel lblNewLabel_2_2 = new JLabel("BACON CHEESE BURGER");
-		lblNewLabel_2_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_2.setForeground(Color.RED);
-		lblNewLabel_2_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_2.setBackground(Color.RED);
-		lblNewLabel_2_2.setBounds(10, 11, 233, 20);
-		inv3_1.add(lblNewLabel_2_2);
+		JLabel lblHeading3_1 = new JLabel("BACON CHEESE BURGER");
+		lblHeading3_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading3_1.setForeground(Color.RED);
+		lblHeading3_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading3_1.setBackground(Color.RED);
+		lblHeading3_1.setBounds(10, 11, 233, 20);
+		inv3_1.add(lblHeading3_1);
 
 		JPanel inv4_1 = new JPanel();
 		inv4_1.setBackground(new Color(255, 255, 204));
@@ -189,28 +203,30 @@ public class main extends JFrame {
 		menu_1.add(inv4_1);
 		inv4_1.setLayout(null);
 
-		JLabel lblNewLabel_4 = new JLabel("New label");
-		lblNewLabel_4.setBounds(10, 42, 233, 147);
-		inv4_1.add(lblNewLabel_4);
+		JLabel imgMenu4_1 = new JLabel("New label");
+		imgMenu4_1.setBounds(10, 42, 233, 147);
+		setImg(imgMenu4_1, "./imgs/burger_4.png", 233, 147);
+		inv4_1.add(imgMenu4_1);
 
-		JButton btnOrder_4 = new JButton("ORDER");
-		btnOrder_4.addActionListener(new ActionListener() {
+		JButton btnOrder4_1 = new JButton("ORDER");
+		btnOrder4_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Double Cheese Burger");
 			}
 		});
-		btnOrder_4.setForeground(Color.YELLOW);
-		btnOrder_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnOrder_4.setBackground(Color.RED);
-		btnOrder_4.setBounds(85, 200, 89, 23);
-		inv4_1.add(btnOrder_4);
+		btnOrder4_1.setForeground(Color.YELLOW);
+		btnOrder4_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder4_1.setBackground(Color.RED);
+		btnOrder4_1.setBounds(85, 200, 89, 23);
+		inv4_1.add(btnOrder4_1);
 
-		JLabel lblNewLabel_2_3 = new JLabel("DOUBLE CHEESE BURGER");
-		lblNewLabel_2_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_3.setForeground(Color.RED);
-		lblNewLabel_2_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_3.setBackground(Color.RED);
-		lblNewLabel_2_3.setBounds(10, 11, 233, 20);
-		inv4_1.add(lblNewLabel_2_3);
+		JLabel lblHeading4_1 = new JLabel("DOUBLE CHEESE BURGER");
+		lblHeading4_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading4_1.setForeground(Color.RED);
+		lblHeading4_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading4_1.setBackground(Color.RED);
+		lblHeading4_1.setBounds(10, 11, 233, 20);
+		inv4_1.add(lblHeading4_1);
 
 		JPanel menu_2 = new JPanel();
 		menu_2.setBackground(Color.BLACK);
@@ -223,24 +239,30 @@ public class main extends JFrame {
 		menu_2.add(inv1_2);
 		inv1_2.setLayout(null);
 
-		JButton btnNewButton_4 = new JButton("ORDER");
-		btnNewButton_4.setForeground(Color.YELLOW);
-		btnNewButton_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnNewButton_4.setBackground(Color.RED);
-		btnNewButton_4.setBounds(85, 200, 89, 23);
-		inv1_2.add(btnNewButton_4);
+		JButton btnOrder1_2 = new JButton("ORDER");
+		btnOrder1_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Leninade");
+			}
+		});
+		btnOrder1_2.setForeground(Color.YELLOW);
+		btnOrder1_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder1_2.setBackground(Color.RED);
+		btnOrder1_2.setBounds(85, 200, 89, 23);
+		inv1_2.add(btnOrder1_2);
 
-		JLabel lblNewLabel_2_4 = new JLabel("LENINADE");
-		lblNewLabel_2_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_4.setForeground(Color.RED);
-		lblNewLabel_2_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_4.setBackground(Color.RED);
-		lblNewLabel_2_4.setBounds(10, 11, 233, 20);
-		inv1_2.add(lblNewLabel_2_4);
+		JLabel lblHeader1_2 = new JLabel("LENINADE");
+		lblHeader1_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader1_2.setForeground(Color.RED);
+		lblHeader1_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeader1_2.setBackground(Color.RED);
+		lblHeader1_2.setBounds(10, 11, 233, 20);
+		inv1_2.add(lblHeader1_2);
 
-		JLabel lblNewLabel_5 = new JLabel("New label");
-		lblNewLabel_5.setBounds(10, 42, 233, 147);
-		inv1_2.add(lblNewLabel_5);
+		JLabel imgMenu1_2 = new JLabel("New label");
+		imgMenu1_2.setBounds(10, 42, 233, 147);
+		setImg(imgMenu1_2, "./imgs/drinks_1.png", 233, 147);
+		inv1_2.add(imgMenu1_2);
 
 		JPanel inv2_2 = new JPanel();
 		inv2_2.setBorder(new LineBorder(Color.RED, 2));
@@ -248,25 +270,30 @@ public class main extends JFrame {
 		menu_2.add(inv2_2);
 		inv2_2.setLayout(null);
 
-		JButton btnNewButton_5 = new JButton("ORDER");
-		btnNewButton_5.setForeground(Color.YELLOW);
-		btnNewButton_5.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnNewButton_5.setBackground(Color.RED);
-		btnNewButton_5.setBounds(85, 200, 89, 23);
-		inv2_2.add(btnNewButton_5);
+		JButton btnOrder2_2 = new JButton("ORDER");
+		btnOrder2_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Kvass");
+			}
+		});
+		btnOrder2_2.setForeground(Color.YELLOW);
+		btnOrder2_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder2_2.setBackground(Color.RED);
+		btnOrder2_2.setBounds(85, 200, 89, 23);
+		inv2_2.add(btnOrder2_2);
 
-		JLabel lblNewLabel_2_5 = new JLabel("KVASS");
-		lblNewLabel_2_5.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_5.setForeground(Color.RED);
-		lblNewLabel_2_5.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_5.setBackground(Color.RED);
-		lblNewLabel_2_5.setBounds(10, 11, 233, 20);
-		inv2_2.add(lblNewLabel_2_5);
+		JLabel lblHeader2_2 = new JLabel("KVASS");
+		lblHeader2_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader2_2.setForeground(Color.RED);
+		lblHeader2_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeader2_2.setBackground(Color.RED);
+		lblHeader2_2.setBounds(10, 11, 233, 20);
+		inv2_2.add(lblHeader2_2);
 
-		JLabel lblNewLabel_6 = new JLabel("New label");
-		lblNewLabel_6.setBackground(new Color(255, 255, 204));
-		lblNewLabel_6.setBounds(10, 42, 233, 147);
-		inv2_2.add(lblNewLabel_6);
+		JLabel imgMenu2_2 = new JLabel("Leninade");
+		imgMenu2_2.setBounds(10, 42, 233, 147);
+		setImg(imgMenu2_2, "./imgs/drinks_2.png", 233, 147);
+		inv2_2.add(imgMenu2_2);
 
 		JPanel inv3_2 = new JPanel();
 		inv3_2.setBorder(new LineBorder(Color.RED, 2));
@@ -274,25 +301,30 @@ public class main extends JFrame {
 		menu_2.add(inv3_2);
 		inv3_2.setLayout(null);
 
-		JButton btnNewButton_6 = new JButton("ORDER");
-		btnNewButton_6.setForeground(Color.YELLOW);
-		btnNewButton_6.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnNewButton_6.setBackground(Color.RED);
-		btnNewButton_6.setBounds(85, 200, 89, 23);
-		inv3_2.add(btnNewButton_6);
+		JButton btnOrder3_2 = new JButton("ORDER");
+		btnOrder3_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Tarkhun");
+			}
+		});
+		btnOrder3_2.setForeground(Color.YELLOW);
+		btnOrder3_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder3_2.setBackground(Color.RED);
+		btnOrder3_2.setBounds(85, 200, 89, 23);
+		inv3_2.add(btnOrder3_2);
 
-		JLabel lblNewLabel_2_6 = new JLabel("TARKHUN");
-		lblNewLabel_2_6.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_6.setForeground(Color.RED);
-		lblNewLabel_2_6.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_6.setBackground(Color.RED);
-		lblNewLabel_2_6.setBounds(10, 11, 233, 20);
-		inv3_2.add(lblNewLabel_2_6);
+		JLabel lblHeader3_2 = new JLabel("TARKHUN");
+		lblHeader3_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader3_2.setForeground(Color.RED);
+		lblHeader3_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeader3_2.setBackground(Color.RED);
+		lblHeader3_2.setBounds(10, 11, 233, 20);
+		inv3_2.add(lblHeader3_2);
 
-		JLabel lblNewLabel_7 = new JLabel("New label");
-		lblNewLabel_7.setBackground(new Color(255, 255, 204));
-		lblNewLabel_7.setBounds(10, 42, 233, 147);
-		inv3_2.add(lblNewLabel_7);
+		JLabel imgMenu3_2 = new JLabel("Tarkhun");
+		imgMenu3_2.setBounds(10, 42, 233, 147);
+		setImg(imgMenu3_2, "./imgs/drinks_3.png", 233, 147);
+		inv3_2.add(imgMenu3_2);
 
 		JPanel inv4_2 = new JPanel();
 		inv4_2.setBorder(new LineBorder(Color.RED, 2));
@@ -300,24 +332,30 @@ public class main extends JFrame {
 		menu_2.add(inv4_2);
 		inv4_2.setLayout(null);
 
-		JButton btnNewButton_7 = new JButton("ORDER");
-		btnNewButton_7.setForeground(Color.YELLOW);
-		btnNewButton_7.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnNewButton_7.setBackground(Color.RED);
-		btnNewButton_7.setBounds(85, 200, 89, 23);
-		inv4_2.add(btnNewButton_7);
+		JButton btnOrder4_2 = new JButton("ORDER");
+		btnOrder4_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Medovukha");
+			}
+		});
+		btnOrder4_2.setForeground(Color.YELLOW);
+		btnOrder4_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder4_2.setBackground(Color.RED);
+		btnOrder4_2.setBounds(85, 200, 89, 23);
+		inv4_2.add(btnOrder4_2);
 
-		JLabel lblNewLabel_2_7 = new JLabel("MEDOVUKHA");
-		lblNewLabel_2_7.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_7.setForeground(Color.RED);
-		lblNewLabel_2_7.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_7.setBackground(Color.RED);
-		lblNewLabel_2_7.setBounds(10, 11, 233, 20);
-		inv4_2.add(lblNewLabel_2_7);
+		JLabel lblHeader4_2 = new JLabel("MEDOVUKHA");
+		lblHeader4_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader4_2.setForeground(Color.RED);
+		lblHeader4_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeader4_2.setBackground(Color.RED);
+		lblHeader4_2.setBounds(10, 11, 233, 20);
+		inv4_2.add(lblHeader4_2);
 
-		JLabel lblNewLabel_8 = new JLabel("New label");
-		lblNewLabel_8.setBounds(10, 42, 233, 147);
-		inv4_2.add(lblNewLabel_8);
+		JLabel imgMenu4_2 = new JLabel("New label");
+		imgMenu4_2.setBounds(10, 42, 233, 147);
+		setImg(imgMenu4_2, "./imgs/drinks_4.png", 233, 147);
+		inv4_2.add(imgMenu4_2);
 
 		JPanel menu_3 = new JPanel();
 		menu_3.setBackground(Color.GREEN);
@@ -330,24 +368,30 @@ public class main extends JFrame {
 		menu_3.add(inv1_3);
 		inv1_3.setLayout(null);
 
-		JLabel lblNewLabel_2_4_1 = new JLabel("MEDOVIK");
-		lblNewLabel_2_4_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_4_1.setForeground(Color.RED);
-		lblNewLabel_2_4_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_4_1.setBackground(Color.RED);
-		lblNewLabel_2_4_1.setBounds(10, 11, 233, 20);
-		inv1_3.add(lblNewLabel_2_4_1);
+		JLabel lblHeader_1_3 = new JLabel("MEDOVIK");
+		lblHeader_1_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader_1_3.setForeground(Color.RED);
+		lblHeader_1_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeader_1_3.setBackground(Color.RED);
+		lblHeader_1_3.setBounds(10, 11, 233, 20);
+		inv1_3.add(lblHeader_1_3);
 
-		JLabel lblNewLabel_5_1 = new JLabel("New label");
-		lblNewLabel_5_1.setBounds(10, 42, 233, 147);
-		inv1_3.add(lblNewLabel_5_1);
+		JLabel imgMenu1_3 = new JLabel("New label");
+		imgMenu1_3.setBounds(10, 42, 233, 147);
+		setImg(imgMenu1_3, "./imgs/dessert_1.png", 233, 147);
+		inv1_3.add(imgMenu1_3);
 
-		JButton btnNewButton_4_1 = new JButton("ORDER");
-		btnNewButton_4_1.setForeground(Color.YELLOW);
-		btnNewButton_4_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnNewButton_4_1.setBackground(Color.RED);
-		btnNewButton_4_1.setBounds(85, 200, 89, 23);
-		inv1_3.add(btnNewButton_4_1);
+		JButton btnOrder1_3 = new JButton("ORDER");
+		btnOrder1_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Medovik");
+			}
+		});
+		btnOrder1_3.setForeground(Color.YELLOW);
+		btnOrder1_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder1_3.setBackground(Color.RED);
+		btnOrder1_3.setBounds(85, 200, 89, 23);
+		inv1_3.add(btnOrder1_3);
 
 		JPanel inv2_3 = new JPanel();
 		inv2_3.setBackground(new Color(255, 255, 204));
@@ -355,24 +399,30 @@ public class main extends JFrame {
 		menu_3.add(inv2_3);
 		inv2_3.setLayout(null);
 
-		JLabel lblNewLabel_2_4_2 = new JLabel("SYRNIKI");
-		lblNewLabel_2_4_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_4_2.setForeground(Color.RED);
-		lblNewLabel_2_4_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_4_2.setBackground(Color.RED);
-		lblNewLabel_2_4_2.setBounds(10, 11, 233, 20);
-		inv2_3.add(lblNewLabel_2_4_2);
+		JLabel lblHeader2_3 = new JLabel("SYRNIKI");
+		lblHeader2_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader2_3.setForeground(Color.RED);
+		lblHeader2_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeader2_3.setBackground(Color.RED);
+		lblHeader2_3.setBounds(10, 11, 233, 20);
+		inv2_3.add(lblHeader2_3);
 
-		JLabel lblNewLabel_5_2 = new JLabel("New label");
-		lblNewLabel_5_2.setBounds(10, 42, 233, 147);
-		inv2_3.add(lblNewLabel_5_2);
+		JLabel imgMenu2_3 = new JLabel("New label");
+		imgMenu2_3.setBounds(10, 42, 233, 147);
+		setImg(imgMenu2_3, "./imgs/dessert_2.png", 233, 147);
+		inv2_3.add(imgMenu2_3);
 
-		JButton btnNewButton_4_2 = new JButton("ORDER");
-		btnNewButton_4_2.setForeground(Color.YELLOW);
-		btnNewButton_4_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnNewButton_4_2.setBackground(Color.RED);
-		btnNewButton_4_2.setBounds(85, 200, 89, 23);
-		inv2_3.add(btnNewButton_4_2);
+		JButton btnOrder2_3 = new JButton("ORDER");
+		btnOrder2_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Syrniki");
+			}
+		});
+		btnOrder2_3.setForeground(Color.YELLOW);
+		btnOrder2_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder2_3.setBackground(Color.RED);
+		btnOrder2_3.setBounds(85, 200, 89, 23);
+		inv2_3.add(btnOrder2_3);
 
 		JPanel inv3_3 = new JPanel();
 		inv3_3.setBackground(new Color(255, 255, 204));
@@ -380,24 +430,30 @@ public class main extends JFrame {
 		menu_3.add(inv3_3);
 		inv3_3.setLayout(null);
 
-		JLabel lblNewLabel_2_4_3 = new JLabel("BAKLAVA");
-		lblNewLabel_2_4_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_4_3.setForeground(Color.RED);
-		lblNewLabel_2_4_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_4_3.setBackground(Color.RED);
-		lblNewLabel_2_4_3.setBounds(10, 11, 233, 20);
-		inv3_3.add(lblNewLabel_2_4_3);
+		JLabel lblHeader3_3 = new JLabel("BAKLAVA");
+		lblHeader3_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader3_3.setForeground(Color.RED);
+		lblHeader3_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeader3_3.setBackground(Color.RED);
+		lblHeader3_3.setBounds(10, 11, 233, 20);
+		inv3_3.add(lblHeader3_3);
 
-		JLabel lblNewLabel_5_3 = new JLabel("New label");
-		lblNewLabel_5_3.setBounds(10, 42, 233, 147);
-		inv3_3.add(lblNewLabel_5_3);
+		JLabel imgMenu3_3 = new JLabel("New label");
+		imgMenu3_3.setBounds(10, 42, 233, 147);
+		setImg(imgMenu3_3, "./imgs/dessert_3.png", 233, 147);
+		inv3_3.add(imgMenu3_3);
 
-		JButton btnNewButton_4_3 = new JButton("ORDER");
-		btnNewButton_4_3.setForeground(Color.YELLOW);
-		btnNewButton_4_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnNewButton_4_3.setBackground(Color.RED);
-		btnNewButton_4_3.setBounds(85, 200, 89, 23);
-		inv3_3.add(btnNewButton_4_3);
+		JButton btnOrder3_3 = new JButton("ORDER");
+		btnOrder3_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Baklava");
+			}
+		});
+		btnOrder3_3.setForeground(Color.YELLOW);
+		btnOrder3_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder3_3.setBackground(Color.RED);
+		btnOrder3_3.setBounds(85, 200, 89, 23);
+		inv3_3.add(btnOrder3_3);
 
 		JPanel inv4_3 = new JPanel();
 		inv4_3.setBackground(new Color(255, 255, 204));
@@ -405,24 +461,30 @@ public class main extends JFrame {
 		menu_3.add(inv4_3);
 		inv4_3.setLayout(null);
 
-		JLabel lblNewLabel_2_4_4 = new JLabel("VARENKI");
-		lblNewLabel_2_4_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_4_4.setForeground(Color.RED);
-		lblNewLabel_2_4_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblNewLabel_2_4_4.setBackground(Color.RED);
-		lblNewLabel_2_4_4.setBounds(10, 11, 233, 20);
-		inv4_3.add(lblNewLabel_2_4_4);
+		JLabel lblHeader4_3 = new JLabel("VARENKI");
+		lblHeader4_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader4_3.setForeground(Color.RED);
+		lblHeader4_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeader4_3.setBackground(Color.RED);
+		lblHeader4_3.setBounds(10, 11, 233, 20);
+		inv4_3.add(lblHeader4_3);
 
-		JLabel lblNewLabel_5_4 = new JLabel("New label");
-		lblNewLabel_5_4.setBounds(10, 42, 233, 147);
-		inv4_3.add(lblNewLabel_5_4);
+		JLabel imgMenu4_3 = new JLabel("New label");
+		imgMenu4_3.setBounds(10, 42, 233, 147);
+		setImg(imgMenu4_3, "./imgs/dessert_4.png", 233, 147);
+		inv4_3.add(imgMenu4_3);
 
-		JButton btnNewButton_4_4 = new JButton("ORDER");
-		btnNewButton_4_4.setForeground(Color.YELLOW);
-		btnNewButton_4_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		btnNewButton_4_4.setBackground(Color.RED);
-		btnNewButton_4_4.setBounds(85, 200, 89, 23);
-		inv4_3.add(btnNewButton_4_4);
+		JButton btnOrder4_3 = new JButton("ORDER");
+		btnOrder4_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tempButtonFunction("Varenki");
+			}
+		});
+		btnOrder4_3.setForeground(Color.YELLOW);
+		btnOrder4_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder4_3.setBackground(Color.RED);
+		btnOrder4_3.setBounds(85, 200, 89, 23);
+		inv4_3.add(btnOrder4_3);
 
 		JPanel panel_1 = new JPanel();
 		panel_1.setForeground(Color.RED);
@@ -476,9 +538,11 @@ public class main extends JFrame {
 		getContentPane().add(scrollPane);
 
 		table = new JTable();
-		table.setModel(new DefaultTableModel(new Object[][] {}, new String[] { "Item", "Qty" }));
+		table.setShowGrid(false);
+		table.setRowSelectionAllowed(false);
+		table.setBackground(new Color(255, 255, 204));
+		table.setModel(new DefaultTableModel(new Object[][] {}, new String[] { "Item" }));
 		table.getColumnModel().getColumn(0).setPreferredWidth(80);
-		table.getColumnModel().getColumn(1).setPreferredWidth(15);
 		table.setFillsViewportHeight(true);
 		scrollPane.setViewportView(table);
 	}
@@ -509,6 +573,24 @@ public class main extends JFrame {
 				tblModel.addRow(input);
 			}
 		}
+
+	}
+
+	public void tempButtonFunction(String var) {
+
+		String input[] = { var };
+		DefaultTableModel tblModel = (DefaultTableModel) table.getModel();
+		tblModel.addRow(input);
+
+	}
+
+	public void setImg(JLabel label, String dir, int x, int y) {
+
+		ImageIcon imageIcon = new ImageIcon(dir); // load the image to a imageIcon
+		Image image = imageIcon.getImage(); // transform it
+		Image newimg = image.getScaledInstance(x, y, java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
+		imageIcon = new ImageIcon(newimg);
+		label.setIcon(imageIcon);
 
 	}
 }
