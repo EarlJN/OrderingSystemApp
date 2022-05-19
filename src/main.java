@@ -49,9 +49,9 @@ public class main extends JFrame {
 		getContentPane().add(pnlHeading);
 		pnlHeading.setLayout(null);
 
-		JLabel txtTitle = new JLabel("MC LENIN's BURGER GRILL");
+		JLabel txtTitle = new JLabel("MC LENIN's BURGER & PIZZA PLACE");
 		txtTitle.setBackground(Color.YELLOW);
-		txtTitle.setBounds(170, 20, 570, 41);
+		txtTitle.setBounds(160, 19, 763, 40);
 		txtTitle.setFont(new Font("Red October", Font.PLAIN, 36));
 		txtTitle.setForeground(Color.YELLOW);
 		pnlHeading.add(txtTitle);
@@ -63,7 +63,7 @@ public class main extends JFrame {
 		pnlHeading.add(imgLogo);
 
 		JLabel imgLogo_2 = new JLabel("New label");
-		imgLogo_2.setBounds(834, 11, 140, 46);
+		imgLogo_2.setBounds(933, 11, 41, 46);
 		setImg(imgLogo_2, "./imgs/logo_2.png");
 		pnlHeading.add(imgLogo_2);
 
@@ -393,9 +393,15 @@ public class main extends JFrame {
 		inv1_2.add(lblHeader1_2);
 
 		JLabel imgMenu1_2 = new JLabel("New label");
-		imgMenu1_2.setBounds(10, 42, 139, 147);
+		imgMenu1_2.setBounds(10, 52, 139, 137);
 		setImg(imgMenu1_2, "./imgs/drinks_1.png");
 		inv1_2.add(imgMenu1_2);
+		
+		Label lblPrice5_2_1 = new Label("60 PHP");
+		lblPrice5_2_1.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_1.setAlignment(Label.CENTER);
+		lblPrice5_2_1.setBounds(10, 30, 139, 22);
+		inv1_2.add(lblPrice5_2_1);
 
 		JPanel inv2_2 = new JPanel();
 		inv2_2.setBorder(new LineBorder(Color.RED, 2));
@@ -424,9 +430,15 @@ public class main extends JFrame {
 		inv2_2.add(lblHeader2_2);
 
 		JLabel imgMenu2_2 = new JLabel("Leninade");
-		imgMenu2_2.setBounds(10, 42, 139, 147);
+		imgMenu2_2.setBounds(10, 52, 139, 137);
 		setImg(imgMenu2_2, "./imgs/drinks_2.png");
 		inv2_2.add(imgMenu2_2);
+		
+		Label lblPrice5_2_2 = new Label("70 PHP");
+		lblPrice5_2_2.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_2.setAlignment(Label.CENTER);
+		lblPrice5_2_2.setBounds(10, 30, 139, 22);
+		inv2_2.add(lblPrice5_2_2);
 
 		JPanel inv3_2 = new JPanel();
 		inv3_2.setBorder(new LineBorder(Color.RED, 2));
@@ -455,9 +467,15 @@ public class main extends JFrame {
 		inv3_2.add(lblHeader3_2);
 
 		JLabel imgMenu3_2 = new JLabel("Tarkhun");
-		imgMenu3_2.setBounds(10, 42, 139, 147);
+		imgMenu3_2.setBounds(10, 52, 139, 137);
 		setImg(imgMenu3_2, "./imgs/drinks_3.png");
 		inv3_2.add(imgMenu3_2);
+		
+		Label lblPrice5_2_3 = new Label("70 PHP");
+		lblPrice5_2_3.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_3.setAlignment(Label.CENTER);
+		lblPrice5_2_3.setBounds(10, 30, 139, 22);
+		inv3_2.add(lblPrice5_2_3);
 
 		JPanel inv4_2 = new JPanel();
 		inv4_2.setBorder(new LineBorder(Color.RED, 2));
@@ -486,28 +504,151 @@ public class main extends JFrame {
 		inv4_2.add(lblHeader4_2);
 
 		JLabel imgMenu4_2 = new JLabel("New label");
-		imgMenu4_2.setBounds(10, 42, 139, 147);
+		imgMenu4_2.setBounds(10, 52, 139, 137);
 		setImg(imgMenu4_2, "./imgs/drinks_4.png");
 		inv4_2.add(imgMenu4_2);
 		
-		JPanel panel_5 = new JPanel();
-		menu_2.add(panel_5);
+		Label lblPrice5_2_4 = new Label("80 PHP");
+		lblPrice5_2_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_4.setAlignment(Label.CENTER);
+		lblPrice5_2_4.setBounds(10, 30, 139, 22);
+		inv4_2.add(lblPrice5_2_4);
 		
-		JPanel panel_6 = new JPanel();
-		menu_2.add(panel_6);
+		JPanel inv5_2 = new JPanel();
+		inv5_2.setBorder(new LineBorder(Color.RED, 2));
+		inv5_2.setBackground(new Color(255, 255, 204));
+		menu_2.add(inv5_2);
+		inv5_2.setLayout(null);
 		
-		JPanel panel_7 = new JPanel();
-		menu_2.add(panel_7);
+		JLabel imgMenu5_2 = new JLabel("burger_1");
+		imgMenu5_2.setBounds(10, 52, 139, 137);
+		setImg(imgMenu5_2, "./imgs/drinks_5.png");
+		inv5_2.add(imgMenu5_2);
 		
-		JPanel panel_8 = new JPanel();
-		menu_2.add(panel_8);
+		JButton btnOrder5_2 = new JButton("ORDER");
+		btnOrder5_2.setForeground(Color.YELLOW);
+		btnOrder5_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder5_2.setBackground(Color.RED);
+		btnOrder5_2.setBounds(10, 200, 139, 23);
+		inv5_2.add(btnOrder5_2);
+		
+		JLabel lblHeading5_2 = new JLabel("PEPSI");
+		lblHeading5_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading5_2.setForeground(Color.RED);
+		lblHeading5_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading5_2.setBackground(Color.RED);
+		lblHeading5_2.setBounds(10, 11, 139, 20);
+		inv5_2.add(lblHeading5_2);
+		
+		Label lblPrice5_2 = new Label("30 PHP");
+		lblPrice5_2.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2.setAlignment(Label.CENTER);
+		lblPrice5_2.setBounds(10, 30, 139, 22);
+		inv5_2.add(lblPrice5_2);
+		
+		JPanel inv6_2 = new JPanel();
+		inv6_2.setBorder(new LineBorder(Color.RED, 2));
+		inv6_2.setBackground(new Color(255, 255, 204));
+		menu_2.add(inv6_2);
+		inv6_2.setLayout(null);
+		
+		JLabel imgMenu6_2 = new JLabel("burger_1");
+		imgMenu6_2.setBounds(10, 52, 139, 137);
+		setImg(imgMenu6_2, "./imgs/drinks_6.png");
+		inv6_2.add(imgMenu6_2);
+		
+		JButton btnOrder6_2 = new JButton("ORDER");
+		btnOrder6_2.setForeground(Color.YELLOW);
+		btnOrder6_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder6_2.setBackground(Color.RED);
+		btnOrder6_2.setBounds(10, 200, 139, 23);
+		inv6_2.add(btnOrder6_2);
+		
+		JLabel lblHeading6_2 = new JLabel("COKE");
+		lblHeading6_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading6_2.setForeground(Color.RED);
+		lblHeading6_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading6_2.setBackground(Color.RED);
+		lblHeading6_2.setBounds(10, 11, 139, 20);
+		inv6_2.add(lblHeading6_2);
+		
+		Label lblPrice6_2 = new Label("30 PHP");
+		lblPrice6_2.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice6_2.setAlignment(Label.CENTER);
+		lblPrice6_2.setBounds(10, 30, 139, 22);
+		inv6_2.add(lblPrice6_2);
+		
+		JPanel inv7_2 = new JPanel();
+		inv7_2.setBorder(new LineBorder(Color.RED, 2));
+		inv7_2.setBackground(new Color(255, 255, 204));
+		menu_2.add(inv7_2);
+		inv7_2.setLayout(null);
+		
+		JLabel imgMenu7_2 = new JLabel("burger_1");
+		imgMenu7_2.setBounds(10, 52, 139, 137);
+		setImg(imgMenu7_2, "./imgs/drinks_7.png");
+		inv7_2.add(imgMenu7_2);
+		
+		JButton btnOrder7_2 = new JButton("ORDER");
+		btnOrder7_2.setForeground(Color.YELLOW);
+		btnOrder7_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder7_2.setBackground(Color.RED);
+		btnOrder7_2.setBounds(10, 200, 139, 23);
+		inv7_2.add(btnOrder7_2);
+		
+		JLabel lblHeading7_2 = new JLabel("MOUNTAIN DEW");
+		lblHeading7_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading7_2.setForeground(Color.RED);
+		lblHeading7_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading7_2.setBackground(Color.RED);
+		lblHeading7_2.setBounds(10, 11, 139, 20);
+		inv7_2.add(lblHeading7_2);
+		
+		Label lblPrice7_2 = new Label("30 PHP");
+		lblPrice7_2.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice7_2.setAlignment(Label.CENTER);
+		lblPrice7_2.setBounds(10, 30, 139, 22);
+		inv7_2.add(lblPrice7_2);
+		
+		JPanel inv8_2 = new JPanel();
+		inv8_2.setBorder(new LineBorder(Color.RED, 2));
+		inv8_2.setBackground(new Color(255, 255, 204));
+		menu_2.add(inv8_2);
+		inv8_2.setLayout(null);
+		
+		JLabel imgMenu8_2 = new JLabel("burger_1");
+		imgMenu8_2.setBounds(10, 52, 139, 137);
+		setImg(imgMenu8_2, "./imgs/drinks_8.png");
+		inv8_2.add(imgMenu8_2);
+		
+		JButton btnOrder8_2 = new JButton("ORDER");
+		btnOrder8_2.setForeground(Color.YELLOW);
+		btnOrder8_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder8_2.setBackground(Color.RED);
+		btnOrder8_2.setBounds(10, 200, 139, 23);
+		inv8_2.add(btnOrder8_2);
+		
+		JLabel lblHeading8_2 = new JLabel("SPRITE");
+		lblHeading8_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading8_2.setForeground(Color.RED);
+		lblHeading8_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading8_2.setBackground(Color.RED);
+		lblHeading8_2.setBounds(10, 11, 139, 20);
+		inv8_2.add(lblHeading8_2);
+		
+		Label lblPrice8_2 = new Label("30 PHP");
+		lblPrice8_2.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice8_2.setAlignment(Label.CENTER);
+		lblPrice8_2.setBounds(10, 30, 139, 22);
+		inv8_2.add(lblPrice8_2);
 
 		JPanel menu_3 = new JPanel();
 		menu_3.setBackground(Color.GREEN);
 		pnlMenu.add(menu_3, "menu_3");
-		menu_3.setLayout(new GridLayout(2, 2, 0, 0));
+		menu_3.setLayout(null);
 
 		JPanel inv1_3 = new JPanel();
+		inv1_3.setBounds(0, 0, 159, 234);
 		inv1_3.setBackground(new Color(255, 255, 204));
 		inv1_3.setBorder(new LineBorder(Color.RED, 2));
 		menu_3.add(inv1_3);
@@ -522,7 +663,7 @@ public class main extends JFrame {
 		inv1_3.add(lblHeader_1_3);
 
 		JLabel imgMenu1_3 = new JLabel("New label");
-		imgMenu1_3.setBounds(10, 42, 139, 147);
+		imgMenu1_3.setBounds(10, 52, 139, 137);
 		setImg(imgMenu1_3, "./imgs/dessert_1.png");
 		inv1_3.add(imgMenu1_3);
 
@@ -535,10 +676,17 @@ public class main extends JFrame {
 		btnOrder1_3.setForeground(Color.YELLOW);
 		btnOrder1_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
 		btnOrder1_3.setBackground(Color.RED);
-		btnOrder1_3.setBounds(10, 200, 89, 23);
+		btnOrder1_3.setBounds(10, 200, 139, 23);
 		inv1_3.add(btnOrder1_3);
+		
+		Label lblPrice5_2_5_1 = new Label("300 PHP");
+		lblPrice5_2_5_1.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_5_1.setAlignment(Label.CENTER);
+		lblPrice5_2_5_1.setBounds(10, 30, 139, 22);
+		inv1_3.add(lblPrice5_2_5_1);
 
 		JPanel inv2_3 = new JPanel();
+		inv2_3.setBounds(159, 0, 159, 234);
 		inv2_3.setBackground(new Color(255, 255, 204));
 		inv2_3.setBorder(new LineBorder(Color.RED, 2));
 		menu_3.add(inv2_3);
@@ -553,7 +701,7 @@ public class main extends JFrame {
 		inv2_3.add(lblHeader2_3);
 
 		JLabel imgMenu2_3 = new JLabel("New label");
-		imgMenu2_3.setBounds(10, 42, 139, 147);
+		imgMenu2_3.setBounds(10, 52, 139, 137);
 		setImg(imgMenu2_3, "./imgs/dessert_2.png");
 		inv2_3.add(imgMenu2_3);
 
@@ -566,10 +714,17 @@ public class main extends JFrame {
 		btnOrder2_3.setForeground(Color.YELLOW);
 		btnOrder2_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
 		btnOrder2_3.setBackground(Color.RED);
-		btnOrder2_3.setBounds(10, 200, 89, 23);
+		btnOrder2_3.setBounds(10, 200, 139, 23);
 		inv2_3.add(btnOrder2_3);
+		
+		Label lblPrice5_2_5_2 = new Label("250 PHP");
+		lblPrice5_2_5_2.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_5_2.setAlignment(Label.CENTER);
+		lblPrice5_2_5_2.setBounds(10, 30, 139, 22);
+		inv2_3.add(lblPrice5_2_5_2);
 
 		JPanel inv3_3 = new JPanel();
+		inv3_3.setBounds(318, 0, 159, 234);
 		inv3_3.setBackground(new Color(255, 255, 204));
 		inv3_3.setBorder(new LineBorder(Color.RED, 2));
 		menu_3.add(inv3_3);
@@ -584,7 +739,7 @@ public class main extends JFrame {
 		inv3_3.add(lblHeader3_3);
 
 		JLabel imgMenu3_3 = new JLabel("New label");
-		imgMenu3_3.setBounds(10, 42, 139, 147);
+		imgMenu3_3.setBounds(10, 52, 139, 137);
 		setImg(imgMenu3_3, "./imgs/dessert_3.png");
 		inv3_3.add(imgMenu3_3);
 
@@ -597,10 +752,17 @@ public class main extends JFrame {
 		btnOrder3_3.setForeground(Color.YELLOW);
 		btnOrder3_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
 		btnOrder3_3.setBackground(Color.RED);
-		btnOrder3_3.setBounds(10, 200, 89, 23);
+		btnOrder3_3.setBounds(10, 200, 139, 23);
 		inv3_3.add(btnOrder3_3);
+		
+		Label lblPrice5_2_5_3 = new Label("250 PHP");
+		lblPrice5_2_5_3.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_5_3.setAlignment(Label.CENTER);
+		lblPrice5_2_5_3.setBounds(10, 30, 139, 22);
+		inv3_3.add(lblPrice5_2_5_3);
 
 		JPanel inv4_3 = new JPanel();
+		inv4_3.setBounds(477, 0, 159, 234);
 		inv4_3.setBackground(new Color(255, 255, 204));
 		inv4_3.setBorder(new LineBorder(Color.RED, 2));
 		menu_3.add(inv4_3);
@@ -615,7 +777,7 @@ public class main extends JFrame {
 		inv4_3.add(lblHeader4_3);
 
 		JLabel imgMenu4_3 = new JLabel("New label");
-		imgMenu4_3.setBounds(10, 42, 139, 147);
+		imgMenu4_3.setBounds(10, 52, 139, 137);
 		setImg(imgMenu4_3, "./imgs/dessert_4.png");
 		inv4_3.add(imgMenu4_3);
 
@@ -628,20 +790,146 @@ public class main extends JFrame {
 		btnOrder4_3.setForeground(Color.YELLOW);
 		btnOrder4_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
 		btnOrder4_3.setBackground(Color.RED);
-		btnOrder4_3.setBounds(10, 200, 89, 23);
+		btnOrder4_3.setBounds(10, 200, 139, 23);
 		inv4_3.add(btnOrder4_3);
 		
+		Label lblPrice5_2_5_4 = new Label("250 PHP");
+		lblPrice5_2_5_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_5_4.setAlignment(Label.CENTER);
+		lblPrice5_2_5_4.setBounds(10, 30, 139, 22);
+		inv4_3.add(lblPrice5_2_5_4);
+		
 		JPanel panel_9 = new JPanel();
+		panel_9.setBounds(0, 234, 159, 234);
+		panel_9.setBackground(new Color(255, 255, 204));
+		panel_9.setBorder(new LineBorder(Color.RED, 2));
 		menu_3.add(panel_9);
+		panel_9.setLayout(null);
+		
+		JButton btnOrder5_2_1 = new JButton("ORDER");
+		btnOrder5_2_1.setForeground(Color.YELLOW);
+		btnOrder5_2_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder5_2_1.setBackground(Color.RED);
+		btnOrder5_2_1.setBounds(10, 200, 139, 23);
+		panel_9.add(btnOrder5_2_1);
+		
+		JLabel imgMenu5_2_1 = new JLabel("burger_1");
+		imgMenu5_2_1.setBounds(10, 52, 139, 137);
+		setImg(imgMenu5_2_1, "./imgs/dessert_5.png");
+		panel_9.add(imgMenu5_2_1);
+		
+		Label lblPrice5_2_5 = new Label("250 PHP");
+		lblPrice5_2_5.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_5.setAlignment(Label.CENTER);
+		lblPrice5_2_5.setBounds(10, 30, 139, 22);
+		panel_9.add(lblPrice5_2_5);
+		
+		JLabel lblHeading5_2_1 = new JLabel("GOLD ICECREAM");
+		lblHeading5_2_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading5_2_1.setForeground(Color.RED);
+		lblHeading5_2_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading5_2_1.setBackground(Color.RED);
+		lblHeading5_2_1.setBounds(10, 11, 139, 20);
+		panel_9.add(lblHeading5_2_1);
 		
 		JPanel panel_10 = new JPanel();
+		panel_10.setBounds(159, 234, 159, 234);
+		panel_10.setBackground(new Color(255, 255, 204));
+		panel_10.setBorder(new LineBorder(Color.RED, 2));
 		menu_3.add(panel_10);
+		panel_10.setLayout(null);
+		
+		JButton btnOrder5_2_2 = new JButton("ORDER");
+		btnOrder5_2_2.setForeground(Color.YELLOW);
+		btnOrder5_2_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder5_2_2.setBackground(Color.RED);
+		btnOrder5_2_2.setBounds(10, 200, 139, 23);
+		panel_10.add(btnOrder5_2_2);
+		
+		JLabel imgMenu5_2_2 = new JLabel("burger_1");
+		imgMenu5_2_2.setBounds(10, 52, 139, 137);
+		setImg(imgMenu5_2_2, "./imgs/dessert_6.png");
+		panel_10.add(imgMenu5_2_2);
+		
+		Label lblPrice5_2_6 = new Label("100 PHP");
+		lblPrice5_2_6.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_6.setAlignment(Label.CENTER);
+		lblPrice5_2_6.setBounds(10, 30, 139, 22);
+		panel_10.add(lblPrice5_2_6);
+		
+		JLabel lblHeading5_2_2 = new JLabel("VANILLA ICECREAM");
+		lblHeading5_2_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading5_2_2.setForeground(Color.RED);
+		lblHeading5_2_2.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading5_2_2.setBackground(Color.RED);
+		lblHeading5_2_2.setBounds(10, 11, 139, 20);
+		panel_10.add(lblHeading5_2_2);
 		
 		JPanel panel_11 = new JPanel();
+		panel_11.setBounds(318, 234, 159, 234);
+		panel_11.setBackground(new Color(255, 255, 204));
+		panel_11.setBorder(new LineBorder(Color.RED, 2));
 		menu_3.add(panel_11);
+		panel_11.setLayout(null);
+		
+		JButton btnOrder5_2_3 = new JButton("ORDER");
+		btnOrder5_2_3.setForeground(Color.YELLOW);
+		btnOrder5_2_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder5_2_3.setBackground(Color.RED);
+		btnOrder5_2_3.setBounds(10, 200, 139, 23);
+		panel_11.add(btnOrder5_2_3);
+		
+		JLabel imgMenu5_2_3 = new JLabel("burger_1");
+		imgMenu5_2_3.setBounds(10, 52, 139, 137);
+		setImg(imgMenu5_2_3, "./imgs/dessert_7.png");
+		panel_11.add(imgMenu5_2_3);
+		
+		Label lblPrice5_2_7 = new Label("200 PHP");
+		lblPrice5_2_7.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_7.setAlignment(Label.CENTER);
+		lblPrice5_2_7.setBounds(10, 30, 139, 22);
+		panel_11.add(lblPrice5_2_7);
+		
+		JLabel lblHeading5_2_3 = new JLabel("TRUFFLE CHOCOLATE");
+		lblHeading5_2_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading5_2_3.setForeground(Color.RED);
+		lblHeading5_2_3.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 13));
+		lblHeading5_2_3.setBackground(Color.RED);
+		lblHeading5_2_3.setBounds(10, 11, 139, 20);
+		panel_11.add(lblHeading5_2_3);
 		
 		JPanel panel_12 = new JPanel();
+		panel_12.setBounds(477, 234, 159, 234);
+		panel_12.setBackground(new Color(255, 255, 204));
+		panel_12.setBorder(new LineBorder(Color.RED, 2));
 		menu_3.add(panel_12);
+		panel_12.setLayout(null);
+		
+		JButton btnOrder5_2_4 = new JButton("ORDER");
+		btnOrder5_2_4.setForeground(Color.YELLOW);
+		btnOrder5_2_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		btnOrder5_2_4.setBackground(Color.RED);
+		btnOrder5_2_4.setBounds(10, 200, 139, 23);
+		panel_12.add(btnOrder5_2_4);
+		
+		JLabel imgMenu5_2_4 = new JLabel("burger_1");
+		imgMenu5_2_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu5_2_4, "./imgs/dessert_8.png");
+		panel_12.add(imgMenu5_2_4);
+		
+		Label lblPrice5_2_8 = new Label("400 PHP");
+		lblPrice5_2_8.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_2_8.setAlignment(Label.CENTER);
+		lblPrice5_2_8.setBounds(10, 30, 139, 22);
+		panel_12.add(lblPrice5_2_8);
+		
+		JLabel lblHeading5_2_4 = new JLabel("CHOCO PUDDING");
+		lblHeading5_2_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading5_2_4.setForeground(Color.RED);
+		lblHeading5_2_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading5_2_4.setBackground(Color.RED);
+		lblHeading5_2_4.setBounds(10, 11, 139, 20);
+		panel_12.add(lblHeading5_2_4);
 		
 		JPanel menu_4 = new JPanel();
 		menu_4.setLayout(new GridLayout(2, 2, 0, 0));
@@ -660,11 +948,12 @@ public class main extends JFrame {
 		btnOrder1_4.setBounds(10, 200, 139, 23);
 		inv1_1_1.add(btnOrder1_4);
 		
-		JLabel imgMenu1_4 = new JLabel("burger_1");
+		JLabel imgMenu1_4 = new JLabel("pizzas_1");
 		imgMenu1_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu1_4, "./imgs/pizzas_1.png");
 		inv1_1_1.add(imgMenu1_4);
 		
-		JLabel lblHeading1_4 = new JLabel("CLASSIC BURGER");
+		JLabel lblHeading1_4 = new JLabel("CHEESE PIZZA");
 		lblHeading1_4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblHeading1_4.setForeground(Color.RED);
 		lblHeading1_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
@@ -672,7 +961,7 @@ public class main extends JFrame {
 		lblHeading1_4.setBounds(10, 11, 139, 20);
 		inv1_1_1.add(lblHeading1_4);
 		
-		Label lblPrice1_4 = new Label("80 PHP");
+		Label lblPrice1_4 = new Label("150 PHP");
 		lblPrice1_4.setFont(new Font("Arial", Font.PLAIN, 11));
 		lblPrice1_4.setAlignment(Label.CENTER);
 		lblPrice1_4.setBounds(10, 30, 139, 22);
@@ -684,9 +973,10 @@ public class main extends JFrame {
 		inv2_1_1.setBackground(new Color(255, 255, 204));
 		menu_4.add(inv2_1_1);
 		
-		JLabel imgMenu2_1_1 = new JLabel("burger_2");
-		imgMenu2_1_1.setBounds(10, 52, 139, 137);
-		inv2_1_1.add(imgMenu2_1_1);
+		JLabel imgMenu2_4 = new JLabel("burger_2");
+		imgMenu2_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu2_4, "./imgs/pizzas_2.png");
+		inv2_1_1.add(imgMenu2_4);
 		
 		JButton btnOrder2_1_1 = new JButton("ORDER");
 		btnOrder2_1_1.setForeground(Color.YELLOW);
@@ -695,19 +985,19 @@ public class main extends JFrame {
 		btnOrder2_1_1.setBounds(10, 200, 139, 23);
 		inv2_1_1.add(btnOrder2_1_1);
 		
-		JLabel lblHeading_2_1 = new JLabel("CHEESE BURGER");
-		lblHeading_2_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblHeading_2_1.setForeground(Color.RED);
-		lblHeading_2_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblHeading_2_1.setBackground(Color.RED);
-		lblHeading_2_1.setBounds(10, 11, 139, 20);
-		inv2_1_1.add(lblHeading_2_1);
+		JLabel lblHeading2_4 = new JLabel("BACON PIZZA");
+		lblHeading2_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading2_4.setForeground(Color.RED);
+		lblHeading2_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading2_4.setBackground(Color.RED);
+		lblHeading2_4.setBounds(10, 11, 139, 20);
+		inv2_1_1.add(lblHeading2_4);
 		
-		Label label_1_3 = new Label("100 PHP");
-		label_1_3.setFont(new Font("Arial", Font.PLAIN, 11));
-		label_1_3.setAlignment(Label.CENTER);
-		label_1_3.setBounds(10, 30, 139, 22);
-		inv2_1_1.add(label_1_3);
+		Label lblPrice2_4 = new Label("250 PHP");
+		lblPrice2_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice2_4.setAlignment(Label.CENTER);
+		lblPrice2_4.setBounds(10, 30, 139, 22);
+		inv2_1_1.add(lblPrice2_4);
 		
 		JPanel inv3_1_1 = new JPanel();
 		inv3_1_1.setLayout(null);
@@ -715,9 +1005,10 @@ public class main extends JFrame {
 		inv3_1_1.setBackground(new Color(255, 255, 204));
 		menu_4.add(inv3_1_1);
 		
-		JLabel imgMenu3_1_1 = new JLabel("burger_3");
-		imgMenu3_1_1.setBounds(10, 52, 139, 137);
-		inv3_1_1.add(imgMenu3_1_1);
+		JLabel imgMenu3_4 = new JLabel("burger_3");
+		imgMenu3_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu3_4, "./imgs/pizzas_3.png");
+		inv3_1_1.add(imgMenu3_4);
 		
 		JButton btnOrder3_1_1 = new JButton("ORDER");
 		btnOrder3_1_1.setForeground(Color.YELLOW);
@@ -726,19 +1017,19 @@ public class main extends JFrame {
 		btnOrder3_1_1.setBounds(10, 200, 139, 23);
 		inv3_1_1.add(btnOrder3_1_1);
 		
-		JLabel lblHeading3_1_1 = new JLabel("BACON CHEESE BURGER");
-		lblHeading3_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblHeading3_1_1.setForeground(Color.RED);
-		lblHeading3_1_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
-		lblHeading3_1_1.setBackground(Color.RED);
-		lblHeading3_1_1.setBounds(10, 11, 139, 20);
-		inv3_1_1.add(lblHeading3_1_1);
+		JLabel lblHeading3_4 = new JLabel("PEPPERONI PIZZA");
+		lblHeading3_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading3_4.setForeground(Color.RED);
+		lblHeading3_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading3_4.setBackground(Color.RED);
+		lblHeading3_4.setBounds(10, 11, 139, 20);
+		inv3_1_1.add(lblHeading3_4);
 		
-		Label label_1_1_1 = new Label("150 PHP");
-		label_1_1_1.setFont(new Font("Arial", Font.PLAIN, 11));
-		label_1_1_1.setAlignment(Label.CENTER);
-		label_1_1_1.setBounds(10, 30, 139, 22);
-		inv3_1_1.add(label_1_1_1);
+		Label lblPrice3_4 = new Label("200 PHP");
+		lblPrice3_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice3_4.setAlignment(Label.CENTER);
+		lblPrice3_4.setBounds(10, 30, 139, 22);
+		inv3_1_1.add(lblPrice3_4);
 		
 		JPanel inv4_1_1 = new JPanel();
 		inv4_1_1.setLayout(null);
@@ -746,9 +1037,10 @@ public class main extends JFrame {
 		inv4_1_1.setBackground(new Color(255, 255, 204));
 		menu_4.add(inv4_1_1);
 		
-		JLabel imgMenu4_1_1 = new JLabel("burger_4");
-		imgMenu4_1_1.setBounds(10, 52, 139, 137);
-		inv4_1_1.add(imgMenu4_1_1);
+		JLabel imgMenu4_4 = new JLabel("burger_4");
+		imgMenu4_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu4_4, "./imgs/pizzas_4.png");
+		inv4_1_1.add(imgMenu4_4);
 		
 		JButton btnOrder4_1_1 = new JButton("ORDER");
 		btnOrder4_1_1.setForeground(Color.YELLOW);
@@ -757,19 +1049,19 @@ public class main extends JFrame {
 		btnOrder4_1_1.setBounds(10, 200, 139, 23);
 		inv4_1_1.add(btnOrder4_1_1);
 		
-		JLabel lblHeading4_1_1 = new JLabel("DOUBLE CHEESE BURGER");
-		lblHeading4_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblHeading4_1_1.setForeground(Color.RED);
-		lblHeading4_1_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 11));
-		lblHeading4_1_1.setBackground(Color.RED);
-		lblHeading4_1_1.setBounds(10, 11, 139, 20);
-		inv4_1_1.add(lblHeading4_1_1);
+		JLabel lblHeading4_4 = new JLabel("OLIVE PIZZA");
+		lblHeading4_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading4_4.setForeground(Color.RED);
+		lblHeading4_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading4_4.setBackground(Color.RED);
+		lblHeading4_4.setBounds(10, 11, 139, 20);
+		inv4_1_1.add(lblHeading4_4);
 		
-		Label label_1_2_1 = new Label("250 PHP");
-		label_1_2_1.setFont(new Font("Arial", Font.PLAIN, 11));
-		label_1_2_1.setAlignment(Label.CENTER);
-		label_1_2_1.setBounds(10, 30, 139, 22);
-		inv4_1_1.add(label_1_2_1);
+		Label lblPrice4_4 = new Label("270 PHP");
+		lblPrice4_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice4_4.setAlignment(Label.CENTER);
+		lblPrice4_4.setBounds(10, 30, 139, 22);
+		inv4_1_1.add(lblPrice4_4);
 		
 		JPanel inv5_1_1 = new JPanel();
 		inv5_1_1.setLayout(null);
@@ -777,23 +1069,24 @@ public class main extends JFrame {
 		inv5_1_1.setBackground(new Color(255, 255, 204));
 		menu_4.add(inv5_1_1);
 		
-		JLabel imgMenu5_1_1 = new JLabel("burger_5");
-		imgMenu5_1_1.setBounds(10, 52, 139, 137);
-		inv5_1_1.add(imgMenu5_1_1);
+		JLabel imgMenu5_4 = new JLabel("burger_5");
+		imgMenu5_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu5_4, "./imgs/pizzas_5.png");
+		inv5_1_1.add(imgMenu5_4);
 		
-		JLabel lblHeading5_1_1 = new JLabel("QUAD BACON BURGER");
-		lblHeading5_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblHeading5_1_1.setForeground(Color.RED);
-		lblHeading5_1_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 13));
-		lblHeading5_1_1.setBackground(Color.RED);
-		lblHeading5_1_1.setBounds(10, 11, 139, 20);
-		inv5_1_1.add(lblHeading5_1_1);
+		JLabel lblHeading5_4 = new JLabel("VEGAN PIZZA");
+		lblHeading5_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading5_4.setForeground(Color.RED);
+		lblHeading5_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading5_4.setBackground(Color.RED);
+		lblHeading5_4.setBounds(10, 11, 139, 20);
+		inv5_1_1.add(lblHeading5_4);
 		
-		Label lblPrice5_1_1 = new Label("350 PHP");
-		lblPrice5_1_1.setFont(new Font("Arial", Font.PLAIN, 11));
-		lblPrice5_1_1.setAlignment(Label.CENTER);
-		lblPrice5_1_1.setBounds(10, 30, 139, 22);
-		inv5_1_1.add(lblPrice5_1_1);
+		Label lblPrice5_4 = new Label("350 PHP");
+		lblPrice5_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice5_4.setAlignment(Label.CENTER);
+		lblPrice5_4.setBounds(10, 30, 139, 22);
+		inv5_1_1.add(lblPrice5_4);
 		
 		JButton btnOrder5_1_1 = new JButton("ORDER");
 		btnOrder5_1_1.setForeground(Color.YELLOW);
@@ -808,23 +1101,24 @@ public class main extends JFrame {
 		inv6_1_1.setBackground(new Color(255, 255, 204));
 		menu_4.add(inv6_1_1);
 		
-		JLabel imgMenu6_1_1 = new JLabel("burger_6");
-		imgMenu6_1_1.setBounds(10, 52, 139, 137);
-		inv6_1_1.add(imgMenu6_1_1);
+		JLabel imgMenu6_4 = new JLabel("burger_6");
+		imgMenu6_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu6_4, "./imgs/pizzas_6.png");
+		inv6_1_1.add(imgMenu6_4);
 		
-		JLabel lblHeading6_1_1 = new JLabel("VEGAN BURGER");
-		lblHeading6_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblHeading6_1_1.setForeground(Color.RED);
-		lblHeading6_1_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblHeading6_1_1.setBackground(Color.RED);
-		lblHeading6_1_1.setBounds(10, 11, 139, 20);
-		inv6_1_1.add(lblHeading6_1_1);
+		JLabel lblHeading6_4 = new JLabel("MUSHROOM PIZZA");
+		lblHeading6_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading6_4.setForeground(Color.RED);
+		lblHeading6_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading6_4.setBackground(Color.RED);
+		lblHeading6_4.setBounds(10, 11, 139, 20);
+		inv6_1_1.add(lblHeading6_4);
 		
-		Label lblPrice6_1_1 = new Label("60 PHP");
-		lblPrice6_1_1.setFont(new Font("Arial", Font.PLAIN, 11));
-		lblPrice6_1_1.setAlignment(Label.CENTER);
-		lblPrice6_1_1.setBounds(10, 30, 139, 22);
-		inv6_1_1.add(lblPrice6_1_1);
+		Label lblPrice6_4 = new Label("300 PHP");
+		lblPrice6_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice6_4.setAlignment(Label.CENTER);
+		lblPrice6_4.setBounds(10, 30, 139, 22);
+		inv6_1_1.add(lblPrice6_4);
 		
 		JButton btnOrder6_1_1 = new JButton("ORDER");
 		btnOrder6_1_1.setForeground(Color.YELLOW);
@@ -839,23 +1133,24 @@ public class main extends JFrame {
 		inv7_1_1.setBackground(new Color(255, 255, 204));
 		menu_4.add(inv7_1_1);
 		
-		JLabel imgMenu7_1_1 = new JLabel("burger_7");
-		imgMenu7_1_1.setBounds(10, 52, 139, 137);
-		inv7_1_1.add(imgMenu7_1_1);
+		JLabel imgMenu7_4 = new JLabel("burger_7");
+		imgMenu7_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu7_4, "./imgs/pizzas_7.png");
+		inv7_1_1.add(imgMenu7_4);
 		
-		JLabel lblHeading7_1_1 = new JLabel("FRIES BURGER");
-		lblHeading7_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblHeading7_1_1.setForeground(Color.RED);
-		lblHeading7_1_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblHeading7_1_1.setBackground(Color.RED);
-		lblHeading7_1_1.setBounds(10, 11, 139, 20);
-		inv7_1_1.add(lblHeading7_1_1);
+		JLabel lblHeading7_4 = new JLabel("HAWAIIAN PIZZA");
+		lblHeading7_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading7_4.setForeground(Color.RED);
+		lblHeading7_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading7_4.setBackground(Color.RED);
+		lblHeading7_4.setBounds(10, 11, 139, 20);
+		inv7_1_1.add(lblHeading7_4);
 		
-		Label lblPrice7_1_1 = new Label("120 PHP");
-		lblPrice7_1_1.setFont(new Font("Arial", Font.PLAIN, 11));
-		lblPrice7_1_1.setAlignment(Label.CENTER);
-		lblPrice7_1_1.setBounds(10, 30, 139, 22);
-		inv7_1_1.add(lblPrice7_1_1);
+		Label lblPrice7_4 = new Label("225 PHP");
+		lblPrice7_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice7_4.setAlignment(Label.CENTER);
+		lblPrice7_4.setBounds(10, 30, 139, 22);
+		inv7_1_1.add(lblPrice7_4);
 		
 		JButton btnOrder7_1_1 = new JButton("ORDER");
 		btnOrder7_1_1.setForeground(Color.YELLOW);
@@ -870,23 +1165,24 @@ public class main extends JFrame {
 		inv8_1_1.setBackground(new Color(255, 255, 204));
 		menu_4.add(inv8_1_1);
 		
-		JLabel imgMenu8_1_1 = new JLabel("burger_8");
-		imgMenu8_1_1.setBounds(10, 52, 139, 137);
-		inv8_1_1.add(imgMenu8_1_1);
+		JLabel imgMenu8_4 = new JLabel("burger_8");
+		imgMenu8_4.setBounds(10, 52, 139, 137);
+		setImg(imgMenu8_4, "./imgs/pizzas_8.png");
+		inv8_1_1.add(imgMenu8_4);
 		
-		JLabel lblHeading8_1_1 = new JLabel("EXTREME BURGER");
-		lblHeading8_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblHeading8_1_1.setForeground(Color.RED);
-		lblHeading8_1_1.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
-		lblHeading8_1_1.setBackground(Color.RED);
-		lblHeading8_1_1.setBounds(10, 11, 139, 20);
-		inv8_1_1.add(lblHeading8_1_1);
+		JLabel lblHeading8_4 = new JLabel("GOLDEN PIZZA");
+		lblHeading8_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeading8_4.setForeground(Color.RED);
+		lblHeading8_4.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 15));
+		lblHeading8_4.setBackground(Color.RED);
+		lblHeading8_4.setBounds(10, 11, 139, 20);
+		inv8_1_1.add(lblHeading8_4);
 		
-		Label lblPrice8_1_1 = new Label("1250 PHP");
-		lblPrice8_1_1.setFont(new Font("Arial", Font.PLAIN, 11));
-		lblPrice8_1_1.setAlignment(Label.CENTER);
-		lblPrice8_1_1.setBounds(10, 30, 139, 22);
-		inv8_1_1.add(lblPrice8_1_1);
+		Label lblPrice8_4 = new Label("5000 PHP");
+		lblPrice8_4.setFont(new Font("Arial", Font.PLAIN, 11));
+		lblPrice8_4.setAlignment(Label.CENTER);
+		lblPrice8_4.setBounds(10, 30, 139, 22);
+		inv8_1_1.add(lblPrice8_4);
 		
 		JButton btnOrder8_1_1 = new JButton("ORDER");
 		btnOrder8_1_1.setForeground(Color.YELLOW);
@@ -945,6 +1241,8 @@ public class main extends JFrame {
 		JButton btnMenu_4 = new JButton("Pizzas");
 		btnMenu_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				CardLayout c = (CardLayout) (pnlMenu.getLayout());
+				c.show(pnlMenu, "menu_4");
 			}
 		});
 		btnMenu_4.setFont(new Font("Red October Light", Font.PLAIN, 13));
@@ -953,7 +1251,7 @@ public class main extends JFrame {
 		panel_1.add(btnMenu_4);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(765, 81, 209, 469);
+		scrollPane.setBounds(765, 81, 209, 427);
 		getContentPane().add(scrollPane);
 
 		table = new JTable();
