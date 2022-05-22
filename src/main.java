@@ -851,7 +851,6 @@ public class main extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				tempButtonFunction("Gold Icecream", "300");
 
-				
 			}
 		});
 		btnOrder5_2_1.setForeground(Color.YELLOW);
@@ -1373,6 +1372,10 @@ public class main extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
+				for (int i = 0; i < table.getRowCount(); i++) {
+
+				}
+
 			}
 		});
 		btnNewButton.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
@@ -1429,7 +1432,7 @@ public class main extends JFrame {
 	public void setImg(JLabel label, String dir) {
 
 		ImageIcon imageIcon = new ImageIcon(dir);
-		Image image = imageIcon.getImage(); 
+		Image image = imageIcon.getImage();
 		Image newimg = image.getScaledInstance(label.getWidth(), label.getHeight(), java.awt.Image.SCALE_SMOOTH);
 		imageIcon = new ImageIcon(newimg);
 		label.setIcon(imageIcon);
